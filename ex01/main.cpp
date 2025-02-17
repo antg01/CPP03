@@ -5,23 +5,25 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: angerard <angerard@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/17 13:24:08 by angerard          #+#    #+#             */
-/*   Updated: 2025/02/17 16:41:54 by angerard         ###   ########.fr       */
+/*   Created: 2025/02/17 16:39:43 by angerard          #+#    #+#             */
+/*   Updated: 2025/02/17 16:41:29 by angerard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main()
 {
-    ClapTrap clapTrap("Claptrap_One");
+    ClapTrap claptrap("Claptrap_One");
+    ScavTrap scavtrap("Scavtrap_One");
 
-    clapTrap.attack("target_1");
-    clapTrap.takeDamage(5);
-    clapTrap.beRepaired(3);
-    clapTrap.attack("target_2");
-    clapTrap.takeDamage(10);
-    clapTrap.beRepaired(5);
+    claptrap.attack("target_1");
+    scavtrap.attack("target_2");
+    scavtrap.guardGate();
+    scavtrap.takeDamage(30);
+    scavtrap.beRepaired(20);
+    scavtrap.takeDamage(100);
+    scavtrap.beRepaired(50);
 
     return 0;
 }

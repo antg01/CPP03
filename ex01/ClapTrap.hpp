@@ -6,7 +6,7 @@
 /*   By: angerard <angerard@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 12:44:59 by angerard          #+#    #+#             */
-/*   Updated: 2025/02/17 16:27:59 by angerard         ###   ########.fr       */
+/*   Updated: 2025/02/17 16:28:58 by angerard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class ClapTrap
 {
-    private:
+    protected:
         std::string _name;
         int _hitPts;
         int _energyPts;
